@@ -42,7 +42,7 @@ The library is distributed via Cocoapods private repository. If you're not using
 ## Swift Package Manager
 
 The library is distributed also as a package for Swift Package Manager:
- 
+   
 1. Create (or append to if already exists) `~/.netrc` file in your home directory with the following credentials you were provided alongside this document:
    ```
    machine wultra.jfrog.io
