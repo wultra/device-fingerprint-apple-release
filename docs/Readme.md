@@ -4,4 +4,4 @@ This simple static library can generate a unique fingerprint calculated from dev
 
 ## Read Next
 
-- [Installation](docs/Installation.md)
+- [Installation](Installation.md)
