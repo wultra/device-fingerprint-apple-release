@@ -48,7 +48,7 @@ The library is distributed also as a package for Swift Package Manager:
                targets: ["YourLibrary"]),
        ],
        dependencies: [
-           .package(name: "WultraDeviceFingerprint", url: "https://github.com/wultra/device-fingerprint-apple-spm", .from("1.2.3"))
+           .package(name: "WultraDeviceFingerprint", url: "https://github.com/wultra/device-fingerprint-apple-spm", .upToNextMajor(from: "1.3.0"))
        ],
        targets: [
            .target(
