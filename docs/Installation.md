@@ -4,40 +4,20 @@
 
 The library is distributed via Cocoapods private repository. If you're not using cocoapods in your project, visit [usage guide](https://guides.cocoapods.org/using/using-cocoapods.html).
 
-1. Install cocoapods-art plugin to be able to access our private repository:
-   ```
-   gem install cocoapods-art
-   ```
-
-2. Create (or append to if already exists) `~/.netrc` file in your home directory with the following credentials you were provided alongside this document:
+1. Create (or append to if already exists) `~/.netrc` file in your home directory with the following credentials you were provided alongside this document:
    ```
    machine wultra.jfrog.io
          login [name@yourcompany.com]
          password [password]
    ``` 
 
-3. Synchronize the remote repository locally:
+2. Add pod to your `Podfile`:
    ```
-   pod repo-art add device_fingerprint_apple https://wultra.jfrog.io/artifactory/api/pods/device-fingerprint-apple
+   pod 'WultraDeviceFingerprint', :git => 'https://github.com/wultra/device-fingerprint-apple-release.git', :tag => 'x.y.z'
    ```
-   To synchronize the repository and receive new versions in the future, use the following command:
-   ```
-   pod repo-art update device_fingerprint_apple
-   ```
+   Where `x.y.z` is an exact version of the library. You can obtain the list of available versions at [releases page](https://github.com/wultra/device-fingerprint-apple-release/releases).
 
-4. To enable cocoapods-art plugin in your project `Podfile`, add the following code somewhere at the beginning of the file:
-   ```
-   plugin 'cocoapods-art', :sources => [
-       'device_fingerprint_apple'
-   ]
-   ```
-
-5. Add pod to your `Podfile`:
-   ```
-   pod 'WultraDeviceFingerprint'
-   ```
-
-6. Run `pod install` in your project dictionary to make the `WultraDeviceFingerprint` framework available in your project.
+3. Run `pod install` in your project dictionary to make the `WultraDeviceFingerprint` framework available in your project.
 
 ## Swift Package Manager
 
@@ -68,7 +48,7 @@ The library is distributed also as a package for Swift Package Manager:
                targets: ["YourLibrary"]),
        ],
        dependencies: [
-           .package(name: "WultraDeviceFingerprint", url: "https://github.com/wultra/device-fingerprint-apple-spm", .from("1.2.1"))
+           .package(name: "WultraDeviceFingerprint", url: "https://github.com/wultra/device-fingerprint-apple-spm", .from("1.2.3"))
        ],
        targets: [
            .target(
@@ -86,3 +66,8 @@ The library is supported on the following operating systems:
 - **tvOS** 9.0+
 - **watchOS** 2.0+
 - **macOS** 10.15+
+
+
+## Read Next
+
+- [Usage](Usage.md)
