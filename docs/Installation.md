@@ -15,7 +15,7 @@ The library is distributed via Cocoapods private repository. If you're not using
    ```
    pod 'WultraDeviceFingerprint', :git => 'https://github.com/wultra/device-fingerprint-apple-release.git', :tag => 'x.y.z'
    ```
-   Where `x.y.z` is an exact version of the library. You can obtain the list of available versions at [releases page](https://github.com/wultra/device-fingerprint-apple-release/releases).
+   Where `x.y.z` is an exact version of the library. You can obtain the list of available versions at [releases page](https://github.com/wultra/device-fingerprint-apple-release/tags).
 
 3. Run `pod install` in your project dictionary to make the `WultraDeviceFingerprint` framework available in your project.
 
@@ -32,7 +32,7 @@ The library is distributed also as a package for Swift Package Manager:
 
 2. Add the following repository as a dependency into your project:
    ```
-   https://github.com/wultra/device-fingerprint-apple-spm
+   https://github.com/wultra/device-fingerprint-apple-release
    ```
    You can use Xcode's dedicated user interface to do this or add the dependency manually, for example:
    ```swift
@@ -48,7 +48,7 @@ The library is distributed also as a package for Swift Package Manager:
                targets: ["YourLibrary"]),
        ],
        dependencies: [
-           .package(name: "WultraDeviceFingerprint", url: "https://github.com/wultra/device-fingerprint-apple-spm", .upToNextMajor(from: "1.3.0"))
+           .package(name: "WultraDeviceFingerprint", url: "https://github.com/wultra/device-fingerprint-apple-release.git", .upToNextMajor(from: "1.3.0"))
        ],
        targets: [
            .target(
