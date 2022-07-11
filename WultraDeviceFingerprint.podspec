@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     s.cocoapods_version = '>= 1.10'
     s.name         = "WultraDeviceFingerprint"
-    s.version      = "1.3.1"
+    s.version      = "1.3.2"
     s.summary      = "Device fingerprinting by Wultra"
     s.homepage     = "https://www.wultra.com"
     s.social_media_url = 'https://twitter.com/wultra'
@@ -19,7 +19,7 @@ Pod::Spec.new do |s|
     LICENSE
     }
     s.prepare_command = <<-CMD
-        ./prepare.sh 1.3.1 0baec6b36a164c47f67e56c06cd3085518faddfdc482a03bfdd394a7a782079b
+        ./prepare.sh 1.3.2 e4dbdae6bcc4421cc78be368fcc6b88f7490f39471ba0604bf9e1361ea44a52b
     CMD
     s.vendored_frameworks = "WultraDeviceFingerprint.xcframework"
 

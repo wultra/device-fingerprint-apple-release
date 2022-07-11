@@ -15,7 +15,7 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "WultraDeviceFingerprint",
-            url: "https://wultra.jfrog.io/artifactory/device-fingerprint-apple-release/WultraDeviceFingerprint-1.3.1.xcframework.zip",
-            checksum: "0baec6b36a164c47f67e56c06cd3085518faddfdc482a03bfdd394a7a782079b")
+            url: "https://wultra.jfrog.io/artifactory/device-fingerprint-apple-release/WultraDeviceFingerprint-1.3.2.xcframework.zip",
+            checksum: "e4dbdae6bcc4421cc78be368fcc6b88f7490f39471ba0604bf9e1361ea44a52b")
     ]
 )
