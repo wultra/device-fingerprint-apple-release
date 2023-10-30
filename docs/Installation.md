@@ -32,11 +32,11 @@ The library is distributed also as a package for Swift Package Manager:
 
 2. Add the following repository as a dependency into your project:
    ```
-   https://github.com/wultra/device-fingerprint-apple-release
+   https://github.com/wultra/device-fingerprint-apple-release.git
    ```
    You can use Xcode's dedicated user interface to do this or add the dependency manually, for example:
    ```swift
-   // swift-tools-version:5.4
+   // swift-tools-version:5.8
 
    import PackageDescription
 
@@ -48,12 +48,14 @@ The library is distributed also as a package for Swift Package Manager:
                targets: ["YourLibrary"]),
        ],
        dependencies: [
-           .package(name: "WultraDeviceFingerprint", url: "https://github.com/wultra/device-fingerprint-apple-release.git", .upToNextMajor(from: "1.3.0"))
+           .package(url: "https://github.com/wultra/device-fingerprint-apple-release.git", .upToNextMajor(from: "1.3.0"))
        ],
        targets: [
            .target(
                name: "YourLibrary",
-               dependencies: ["WultraDeviceFingerprint"])
+               dependencies: [
+                .product(name: "WultraDeviceFingerprint", package: "device-fingerprint-apple-release")
+               ])
        ]
    )
    ```
